@@ -127,7 +127,7 @@ class App extends Component{
 
     this.setState({imageUrl: this.state.input});
 
-        fetch('http://localhost:3001/imageurl',{
+        fetch('https://radiant-sea-16544.herokuapp.com/imageurl',{
               method: 'post',
               headers: {'Content-Type' : 'application/json'},
 
@@ -142,7 +142,7 @@ class App extends Component{
 
             console.log(this.state.user.entries);
 
-            fetch('http://localhost:3001/image',{
+            fetch(' https://radiant-sea-16544.herokuapp.com/image',{
               method: 'put',
               headers: {'Content-Type' : 'application/json'},
 
